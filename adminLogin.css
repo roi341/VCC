@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 2vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    font-weight: 200;
+}
+
+.logo {
+    width: 20vw;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1.25vw;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1..25vw;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: .15vw;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.float-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.wrapper {
+    width: 24vw;
+    background: transparent;
+    border: .15vw solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 1vw;
+    padding: 2vw 3vw;
+}
+
+.wrapper h1 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 3vw;
+    margin: 1.5vw 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: .15vw solid rgba(255, 255, 255, .2);
+    border-radius: 1vw;
+    font-size: 1vw;
+    color: #fff;
+    padding: 1vw 2vw 1vw 1vw;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 1vw;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5vw;   
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+    margin: -2vw 1vw 1vw 1vw;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: .15vw;
+    height: 1vw;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 2.25vw;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 2vw;
+    box-shadow: 0 0 .5vw rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 1vw;
+    color: #333;
+    font-weight: 600;
+}
